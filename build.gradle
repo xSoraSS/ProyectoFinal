@@ -11,7 +11,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.0'
-        
+        classpath "com.badlogicgames.gdx:gdx-tools:1.9.9"
 
     }
 }
@@ -94,6 +94,21 @@ project(":core") {
         api "com.badlogicgames.gdx:gdx-ai:$aiVersion"
         api "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
         api "com.badlogicgames.box2dlights:box2dlights:$box2DLightsVersion"
-        
+
+    }
+}
+
+project.ext.texturePacker = [ "android/assets/", "android/assets/", "fighters" ]
+
+// Import the texture packer
+import com.badlogic.gdx.tools.texturepacker.TexturePacker
+
+// Add a new task that packs the textures for you
+task texturePacker {
+    doLast {
+        if (project.ext.has('texturePacker')) {
+            logger.info "Calling TexturePacker: "+texturePacker
+            TexturePacker.process(texturePacker[0], texturePacker[1], texturePacker[2])
+        }
     }
 }
