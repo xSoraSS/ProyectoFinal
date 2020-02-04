@@ -20,11 +20,11 @@ public class PlayerController {
 
     public void update() {
 
-        if (Controls.backwardKey()) {
+        if (Controls.backwardKeyPressed()) {
 
         }
 
-        if (Controls.forwardKey()) {
+        if (Controls.forwardKeyPressed()) {
 
         }
     }

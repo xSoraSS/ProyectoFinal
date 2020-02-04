@@ -5,9 +5,9 @@ import com.badlogic.gdx.Screen;
 public class FighterScreen implements Screen {
 
     Assets assets;
-    MainGame game;
+    FightersGame game;
 
-    public FighterScreen(MainGame game){
+    public FighterScreen(FightersGame game){
         this.game = game;
         this.assets = game.assets;
     }
