@@ -5,37 +5,37 @@ import com.badlogic.gdx.Input;
 
 public class Controls {
     //Mover Atras && Bloquear Ataques
-    public static boolean backwardKey(){
+    public static boolean backwardKeyPressed(){
         return Gdx.input.isKeyPressed(Input.Keys.LEFT) || Gdx.input.isKeyPressed(Input.Keys.A);
     }
 
     //Mover Adelante
-    public static boolean forwardKey(){
+    public static boolean forwardKeyPressed(){
         return Gdx.input.isKeyPressed(Input.Keys.RIGHT) || Gdx.input.isKeyPressed(Input.Keys.D);
     }
 
     //Saltar
-    public static boolean jumpKey(){
+    public static boolean jumpKeyPressed(){
         return Gdx.input.isKeyPressed(Input.Keys.UP) || Gdx.input.isKeyPressed(Input.Keys.W );
     }
 
     //Agacharse
-    public static boolean crouchKey(){
+    public static boolean crouchKeyPressed(){
         return Gdx.input.isKeyPressed(Input.Keys.DOWN) || Gdx.input.isKeyPressed(Input.Keys.S);
     }
 
     //Ataque Puñetazo
-    public static boolean punchKey(){
-        return Gdx.input.isKeyPressed(Input.Keys.F) || Gdx.input.isKeyPressed(Input.Keys.K);
+    public static boolean punchKeyPressed(){
+        return Gdx.input.isKeyPressed(Input.Keys.V) || Gdx.input.isKeyPressed(Input.Keys.K);
     }
 
     //Ataque Patada
-    public static boolean kickKey(){
-        return Gdx.input.isKeyPressed(Input.Keys.G) || Gdx.input.isKeyPressed(Input.Keys.L);
+    public static boolean kickKeyPressed(){
+        return Gdx.input.isKeyPressed(Input.Keys.B) || Gdx.input.isKeyPressed(Input.Keys.L);
     }
 
     //Lanzar Habilidad
-    public static boolean skillKey(){
-        return Gdx.input.isKeyPressed(Input.Keys.T) || Gdx.input.isKeyPressed(Input.Keys.O);
+    public static boolean skillKeyPressed(){
+        return Gdx.input.isKeyPressed(Input.Keys.F) || Gdx.input.isKeyPressed(Input.Keys.O);
     }
 }
