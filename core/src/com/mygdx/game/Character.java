@@ -1,9 +1,10 @@
 package com.mygdx.game;
 
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
-import com.mygdx.game.Assets;
 
 public class Character {
     //CREAR LÓGICA DE LOS PERSONAJES
@@ -25,21 +26,19 @@ public class Character {
         stateTime = 0;
     }
 
-
     void setFrame(Assets assets){
         switch (state){
-//            case IDLE:
-//                frame = assets.idle.getKeyFrame(stateTime, true);
-//                break;
-            default:
+            case IDLE:
                 frame = assets.idle.getKeyFrame(stateTime, true);
                 break;
+//            default:
+//                frame = assets.idle.getKeyFrame(stateTime, true);
+//                break;
         }
     }
 
     void render(SpriteBatch batch){
         batch.draw(frame, position.x, position.y);
-
     }
 
     public void update(float delta, Assets assets) {

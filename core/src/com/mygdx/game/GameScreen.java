@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 
-public class GameScreen extends FighterScreen {
+public class GameScreen extends FightersScreen {
 
     public SpriteBatch spriteBatch;
 
@@ -17,7 +17,7 @@ public class GameScreen extends FighterScreen {
 
     World world;
 
-    public GameScreen(Main fightersGame) {
+    public GameScreen(FightersGame fightersGame) {
         super(fightersGame);
     }
 

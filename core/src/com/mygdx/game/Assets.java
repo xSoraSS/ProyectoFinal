@@ -28,6 +28,5 @@ public class Assets extends AssetManager {
 
     void loadAnimations(){
         idle = new Animation<TextureRegion>(0.3f, atlas.findRegions("idle"));
-
     }
 }

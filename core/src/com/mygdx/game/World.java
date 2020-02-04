@@ -5,13 +5,14 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 public class World {
     Character character;
 
-	int WORLD_WIDTH, WORLD_HEIGHT;
+    int WORLD_WIDTH, WORLD_HEIGHT;
 
-	public World(int WORLD_WIDTH, int WORLD_HEIGHT){
-		this.WORLD_WIDTH = WORLD_WIDTH;
-		this.WORLD_HEIGHT = WORLD_HEIGHT;
+    public World(int WORLD_WIDTH, int WORLD_HEIGHT){
+        this.WORLD_WIDTH = WORLD_WIDTH;
+        this.WORLD_HEIGHT = WORLD_HEIGHT;
 
-	}
+        character = new Character(WORLD_WIDTH/2);
+    }
 
     public void render(float delta, SpriteBatch batch, Assets assets){
 
@@ -24,6 +25,6 @@ public class World {
 
     void update(float delta, Assets assets){
         character.update(delta, assets);
-	}
 
+    }
 }

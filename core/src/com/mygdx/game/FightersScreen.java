@@ -2,12 +2,11 @@ package com.mygdx.game;
 
 import com.badlogic.gdx.Screen;
 
-public class FighterScreen implements Screen {
-
+public class FightersScreen implements Screen {
+    FightersGame game;
     Assets assets;
-    MainGame game;
 
-    public FighterScreen(MainGame game){
+    public FightersScreen(FightersGame game){
         this.game = game;
         this.assets = game.assets;
     }
