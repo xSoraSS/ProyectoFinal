@@ -30,7 +30,7 @@ public class GameScreen extends FightersScreen {
 
         spriteBatch = new SpriteBatch();
 
-        world = new World(SCENE_WIDTH, SCENE_HEIGHT);
+        world = new World(SCENE_WIDTH, SCENE_HEIGHT, spriteBatch);
     }
 
     @Override
