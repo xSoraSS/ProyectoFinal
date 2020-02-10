@@ -11,7 +11,7 @@ public class Character {
 
 
     enum State {
-        IDLE;
+        IDLE, PUNCH, KICK;
     }
 
     Vector2 position;
@@ -30,6 +30,12 @@ public class Character {
         switch (state){
             case IDLE:
                 frame = assets.idle.getKeyFrame(stateTime, true);
+                break;
+            case PUNCH:
+                frame = assets.punch.getKeyFrame(stateTime, false);
+                break;
+            case KICK:
+                frame = assets.kick.getKeyFrame(stateTime, false);
                 break;
 //            default:
 //                frame = assets.idle.getKeyFrame(stateTime, true);

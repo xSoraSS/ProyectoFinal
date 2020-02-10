@@ -7,7 +7,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
 public class Assets extends AssetManager {
     public TextureAtlas atlas;
-    public Animation<TextureRegion> idle;
+    public Animation<TextureRegion> idle, punch, kick;
 
     public void load(){
         load("fighters.atlas", TextureAtlas.class);
@@ -28,5 +28,8 @@ public class Assets extends AssetManager {
 
     void loadAnimations(){
         idle = new Animation<TextureRegion>(0.3f, atlas.findRegions("idle"));
+        punch = new Animation<TextureRegion>(0.3f, atlas.findRegions("punch"));
+        kick = new Animation<TextureRegion>(0.3f, atlas.findRegions("kick"));
+
     }
 }
