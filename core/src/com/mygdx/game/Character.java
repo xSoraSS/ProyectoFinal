@@ -44,7 +44,7 @@ public class Character {
     }
 
     void render(SpriteBatch batch){
-        batch.draw(frame, position.x, position.y);
+        batch.draw(frame, position.x, position.y, 32, 32);
     }
 
     public void update(float delta, Assets assets) {

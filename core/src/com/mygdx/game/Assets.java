@@ -27,9 +27,9 @@ public class Assets extends AssetManager {
     }
 
     void loadAnimations(){
-        idle = new Animation<TextureRegion>(0.3f, atlas.findRegions("idle"));
-        punch = new Animation<TextureRegion>(0.3f, atlas.findRegions("punch"));
-        kick = new Animation<TextureRegion>(0.3f, atlas.findRegions("kick"));
+        idle = new Animation<TextureRegion>(0.1f, atlas.findRegions("Idle"));
+        punch = new Animation<TextureRegion>(0.1f, atlas.findRegions("Attack"));
+        kick = new Animation<TextureRegion>(1f, atlas.findRegions("kick"));
 
     }
 }
