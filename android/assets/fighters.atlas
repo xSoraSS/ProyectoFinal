@@ -1,0 +1,212 @@
+
+fighters.png
+size: 1024,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Attack
+  rotate: false
+  xy: 2, 499
+  size: 536, 495
+  orig: 536, 495
+  offset: 0, 0
+  index: 0
+Attack
+  rotate: false
+  xy: 2, 2
+  size: 536, 495
+  orig: 536, 495
+  offset: 0, 0
+  index: 1
+Idle
+  rotate: false
+  xy: 540, 555
+  size: 232, 439
+  orig: 232, 439
+  offset: 0, 0
+  index: 0
+Idle
+  rotate: false
+  xy: 540, 114
+  size: 232, 439
+  orig: 232, 439
+  offset: 0, 0
+  index: 1
+Idle
+  rotate: false
+  xy: 540, 114
+  size: 232, 439
+  orig: 232, 439
+  offset: 0, 0
+  index: 9
+Idle
+  rotate: false
+  xy: 774, 555
+  size: 232, 439
+  orig: 232, 439
+  offset: 0, 0
+  index: 2
+Idle
+  rotate: false
+  xy: 774, 555
+  size: 232, 439
+  orig: 232, 439
+  offset: 0, 0
+  index: 8
+Idle
+  rotate: false
+  xy: 774, 114
+  size: 232, 439
+  orig: 232, 439
+  offset: 0, 0
+  index: 3
+Idle
+  rotate: false
+  xy: 774, 114
+  size: 232, 439
+  orig: 232, 439
+  offset: 0, 0
+  index: 7
+kick
+  rotate: false
+  xy: 540, 80
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 0
+punch
+  rotate: false
+  xy: 540, 80
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 0
+stickIdle
+  rotate: false
+  xy: 540, 80
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+kick
+  rotate: false
+  xy: 540, 46
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 1
+punch
+  rotate: false
+  xy: 574, 80
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 1
+stickIdle1
+  rotate: false
+  xy: 540, 12
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+
+fighters2.png
+size: 1024,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Attack
+  rotate: false
+  xy: 2, 499
+  size: 536, 495
+  orig: 536, 495
+  offset: 0, 0
+  index: 2
+Attack
+  rotate: false
+  xy: 2, 2
+  size: 536, 495
+  orig: 536, 495
+  offset: 0, 0
+  index: 3
+Idle
+  rotate: false
+  xy: 540, 555
+  size: 232, 439
+  orig: 232, 439
+  offset: 0, 0
+  index: 4
+Idle
+  rotate: false
+  xy: 540, 555
+  size: 232, 439
+  orig: 232, 439
+  offset: 0, 0
+  index: 6
+Idle
+  rotate: false
+  xy: 540, 114
+  size: 232, 439
+  orig: 232, 439
+  offset: 0, 0
+  index: 5
+
+fighters3.png
+size: 1024,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Attack
+  rotate: false
+  xy: 2, 499
+  size: 536, 495
+  orig: 536, 495
+  offset: 0, 0
+  index: 4
+Attack
+  rotate: false
+  xy: 2, 2
+  size: 536, 495
+  orig: 536, 495
+  offset: 0, 0
+  index: 5
+
+fighters4.png
+size: 1024,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Attack
+  rotate: false
+  xy: 2, 499
+  size: 536, 495
+  orig: 536, 495
+  offset: 0, 0
+  index: 6
+Attack
+  rotate: false
+  xy: 2, 2
+  size: 536, 495
+  orig: 536, 495
+  offset: 0, 0
+  index: 7
+
+fighters5.png
+size: 1024,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Attack
+  rotate: false
+  xy: 2, 499
+  size: 536, 495
+  orig: 536, 495
+  offset: 0, 0
+  index: 8
+Attack
+  rotate: false
+  xy: 2, 2
+  size: 536, 495
+  orig: 536, 495
+  offset: 0, 0
+  index: 9
