@@ -7,7 +7,8 @@ import com.badlogic.gdx.utils.Timer;
 public class PlayerController {
     SpriteBatch batch;
     Character character;
-    int speed = 5, jumpForce = 20;
+    int speed = 5, jumpForce = 30;
+    float delay = 0.15f; // seconds
     boolean isJumping = false, overFloor = true, punch = false, kick = false;
 
     public PlayerController(SpriteBatch batch, Character character) {
@@ -38,8 +39,6 @@ public class PlayerController {
 
         if (Controls.jumpKeyPressed() && !isJumping && overFloor){
 
-
-            float delay = 1/2; // seconds
             character.position.y += jumpForce;
 
             Timer.schedule(new Timer.Task(){
@@ -53,22 +52,30 @@ public class PlayerController {
         if (Controls.punchKeyPressed() && !punch){
             System.out.println("PUÑETAZO");
             character.state = Character.State.PUNCH;
-            punch = true;
-        } else {
-            punch = false;
+            Timer.schedule(new Timer.Task(){
+                @Override
+                public void run() {
+                    punch = true;
+                }
+            }, delay);
+        }else if(punch){
             character.state = Character.State.IDLE;
+            punch = false;
         }
 
-        if (Controls.kickKeyPressed() && !kick){
+        if (Controls.kickKeyPressed() && !kick) {
             System.out.println("PATADA");
             character.state = Character.State.KICK;
-            kick = true;
-        } else {
-            kick = false;
+            Timer.schedule(new Timer.Task(){
+                @Override
+                public void run() {
+                    kick = true;
+                }
+            }, delay);
+        }else if(kick){
             character.state = Character.State.IDLE;
+            kick = false;
         }
-
-
     }
 
     public void dispose() {

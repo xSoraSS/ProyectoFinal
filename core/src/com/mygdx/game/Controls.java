@@ -16,7 +16,7 @@ public class Controls {
 
     //Saltar
     public static boolean jumpKeyPressed(){
-        return Gdx.input.isKeyPressed(Input.Keys.UP) || Gdx.input.isKeyPressed(Input.Keys.W );
+        return Gdx.input.isKeyJustPressed(Input.Keys.UP) || Gdx.input.isKeyJustPressed(Input.Keys.W );
     }
 
     //Agacharse
@@ -26,16 +26,16 @@ public class Controls {
 
     //Ataque Puñetazo
     public static boolean punchKeyPressed(){
-        return Gdx.input.isKeyPressed(Input.Keys.V) || Gdx.input.isKeyPressed(Input.Keys.K);
+        return Gdx.input.isKeyJustPressed(Input.Keys.V) || Gdx.input.isKeyPressed(Input.Keys.K);
     }
 
     //Ataque Patada
     public static boolean kickKeyPressed(){
-        return Gdx.input.isKeyPressed(Input.Keys.B) || Gdx.input.isKeyPressed(Input.Keys.L);
+        return Gdx.input.isKeyJustPressed(Input.Keys.B) || Gdx.input.isKeyPressed(Input.Keys.L);
     }
 
     //Lanzar Habilidad
     public static boolean skillKeyPressed(){
-        return Gdx.input.isKeyPressed(Input.Keys.F) || Gdx.input.isKeyPressed(Input.Keys.O);
+        return Gdx.input.isKeyJustPressed(Input.Keys.F) || Gdx.input.isKeyPressed(Input.Keys.O);
     }
 }
